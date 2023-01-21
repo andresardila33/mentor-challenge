@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor challenge</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <title>Frontend Mentor challenge</title>
-  <link rel="stylesheet" href="./css/main.css" />
-</head>
-
-<body>
-  <main class="main">
-    <section class="image"></section>
-    <article class="content">
-      <h1 class="content__title">
-        Shift the overall look and feel by adding these wonderful touches to
-        furniture in your home
-      </h1>
-      <p class="content__description">
-        Ever been in a room and felt like something was missing? Perhaps it
-        felt slightly bare and uninviting. I’ve got some simple tips to help
-        you make any room feel complete.
-      </p>
-      <section class="info">
-        <div class="author">
-          <img src="./images/avatar-michelle.jpg" alt="Avatar" class="author__avatar" />
-          <div class="author__info">
-            <p class="author__info__name">Michele Appleton</p>
-            <p class="author__info__date">28 June 2020</p>
+  <body>
+    <main class="main">
+      <section class="image"></section>
+      <article class="content">
+        <h1 class="content__title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="content__description">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <section class="info">
+          <div class="author">
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt="Avatar"
+              class="author__avatar"
+            />
+            <div class="author__info">
+              <p class="author__info__name">Michele Appleton</p>
+              <p class="author__info__date">28 June 2020</p>
+            </div>
           </div>
-        </div>
 
-        <div class="share">
-          <img src="./images/icon-share.svg" alt="Share" class="share__icon" />
-        </div>
-      </section>
-    </article>
-  </main>
-</body>
+          <div class="share">
+            <nav class="tooltip">
+              <span class="tooltip__text">SHARE</span>
+              <a href="#" class="tooltip__link"></a><img class="tooltip__link__icon" src="./images/icon-facebook.svg" alt="Facebook" /></a
+              ><a href="#" class="tooltip__link"><img class="tooltip__link__icon" src="./images/icon-twitter.svg" alt="Twiter" /></a
+              ><a href="#" class="tooltip__link"><img class="tooltip__link__icon" src="./images/icon-pinterest.svg" alt="Pinterest" /></a>
+            </nav>
+            <img src="./images/icon-share.svg" alt="Share" class="share__icon"/>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>

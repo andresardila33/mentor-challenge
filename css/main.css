@@ -105,6 +105,56 @@ body {
     font-weight: lighter;
 }
 
+.share {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    top: -70px;
+    left: -5.5rem;
+    background-color: hsl(217, 19%, 35%);
+    padding: 1rem 1.7rem;
+    color: hsl(210, 46%, 95%);
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 20px gray;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .6s ease-in;
+}
+
+.tooltip.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip::before {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: red;
+    left: calc(50% - 0.7rem);
+    top: 2.6rem;
+    transform: rotate(45deg);
+    background-color: hsl(217, 19%, 35%);    
+} 
+
+.tooltip__text {
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+}
+
+.tooltip__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .share__icon {
     padding: 1rem;
     background-color: hsl(210, 46%, 95%);
